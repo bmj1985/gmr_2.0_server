@@ -33,9 +33,6 @@
         "singleQuote": true
     },
     "lint-staged": {
-        "linters": {
-            "*.{js}": "git add"
-        },
         "ignore": [
             "**/dist/*.min.js"
         ],
