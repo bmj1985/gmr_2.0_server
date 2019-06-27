@@ -13,6 +13,7 @@
         "lint-staged": ">=8",
         "morgan": "^1.9.1",
         "pg": "^7.11.0",
+        "pg-hstore": "^2.3.3",
         "prettier": "^1.18.2",
         "sequelize": "^5.8.12",
         "sequelize-cli": "^5.5.0"
@@ -28,7 +29,7 @@
     },
     "prettier": {
         "trailingComma": "es5",
-        "tabWidth": 4,
+        "tabWidth": 2,
         "semi": false,
         "singleQuote": true
     },
@@ -49,6 +50,6 @@
     },
     "devDependencies": {
         "eslint": "^6.0.1",
-        "standard": "^12.0.1"
+        "eslint-config-prettier": "^6.0.0"
     }
 }
