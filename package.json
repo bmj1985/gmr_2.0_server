@@ -33,6 +33,12 @@
         "singleQuote": true
     },
     "lint-staged": {
+        "linters": {
+            "*.js": [
+                "eslint --fix",
+                "git add"
+            ]
+        },
         "ignore": [
             "**/dist/*.min.js"
         ],
