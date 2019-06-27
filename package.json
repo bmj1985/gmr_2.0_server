@@ -1,0 +1,51 @@
+{
+    "name": "gmr_2.0_server",
+    "version": "1.0.0",
+    "main": "app.js",
+    "repository": "https://github.com/bmj1985/gmr_2.0_server.git",
+    "author": "Brandon Johnson <bmj1985@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.0.0",
+        "express": "^4.17.1",
+        "husky": ">=1",
+        "lint-staged": ">=8",
+        "morgan": "^1.9.1",
+        "pg": "^7.11.0",
+        "prettier": "^1.18.2",
+        "sequelize": "^5.8.12",
+        "sequelize-cli": "^5.5.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    },
+    "lint-staged": {
+        "linters": {
+            "*.{js}": "git add"
+        },
+        "ignore": [
+            "**/dist/*.min.js"
+        ],
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^6.0.1",
+        "standard": "^12.0.1"
+    }
+}
